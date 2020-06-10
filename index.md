@@ -1,11 +1,10 @@
-# Main Title
+# Mostly Python and GIS Stuff
 
-Here's my edits.
+You can find a bunch of the stuff I've built here.
 
-Hello and welcome to this blog. Edit the `index.md` file to change this content. All pages on the blog, including this one, use [Markdown](https://guides.github.com/features/mastering-markdown/). You can include images:
+## ArcGIS Online Inventory Tool
+This tool is incredibly helpful for ArcGIS Online administrators.  Basically, this bit of python code will check out everything in your organization and can build a small SQLITE database to help you keep track of how everything is inter-related.
+[Check out the Repo](https://github.com/DanCranford/agol-inventory)
 
-![Image of fast.ai logo](images/logo.png)
 
-## This is a title
-
-And you can include links, like this [link to fast.ai](https://www.fast.ai). Posts will appear after this file. 
+This blog is formatted using the [fast.ai fastblog](https://www.fast.ai).
