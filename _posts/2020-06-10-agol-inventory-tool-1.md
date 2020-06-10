@@ -1,4 +1,4 @@
-# AGOL Inventory Tool
+# AGOL Inventory Tool - Overview
 
 This tool will run an inventory of your ArcGIS Online organization or ArcGIS Portal instance.
 
