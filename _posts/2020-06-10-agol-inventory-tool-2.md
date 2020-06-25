@@ -39,3 +39,22 @@ Once the tool has gathered this information, you can choose to export to SQLITE 
 
 {% include info.html text="SQLITE databases can be opened in ArcGIS Pro or in any SQLITE interface (such as SQLITE Studio or DB Browser)" %}
 
+## Results
+
+The simplest product of this tool includes tables (or sheets in the case of an excel output) that document the following:
+- **USERS** - an inventory of all users
+- **GROUPS** - an inventory of all groups
+- **GROUP_MEMBERSHIP** - join table showing which users are in which groups
+- **WEB_MAPS** - inventory of all Web Map items
+- **FEATURE_SERVICES** - inventory of all feature services.  This table will also show source item for hosted feature views.
+- **WEB_APPS** - inventory of Web Mapping Applications
+- **OTHER_ITEMS** - all other items including Survey123 forms, dashboards, etc.
+- **MAP_FS_REL** - Join table showing each layer in each web map and its source data
+- **TAGS** - item tags - one-to-many with all items.  
+- **CATEGORIES** - item categories - one-to-many with all items.
+
+If you opt for a SQLITE output, the tool will create the following additional views:
+- **USERS_VIEW** - user info showing number of days since last login
+- **GROUPS_ZEROMEMBERS** - standing view of groups with no members.  
+- **STORAGE_ESTIMATE** - rough estimate of hosted feature storage credit usage based on file size.  *This is just an estimate and is usually within 5% of real storage costs*.
+- **ALL_ITEMS** - union of all items including web maps, web apps, feature services, and other
